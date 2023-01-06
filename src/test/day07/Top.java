@@ -1,7 +1,6 @@
 package test.day07;
 
 public class Top {
-
     public static void main(String[] args) {
 
         // Bir top belirli yükseklikten atılmaktadır.
@@ -10,7 +9,7 @@ public class Top {
         // Bu ana kadar aldigi toplam yolu ve yere vurma sayısını bulan
         // do while code blogu create ediniz.
 
-        double yukseklik = 2.00;
+        double yukseklik = 1.60;
         int yereVurmaSayisi = 0;
         double topunToplamYolu = 0;
 
@@ -18,7 +17,9 @@ public class Top {
             topunToplamYolu+=yukseklik;
             yereVurmaSayisi++;
             yukseklik*=0.75;
+            if (yukseklik>=1)
             topunToplamYolu+=yukseklik;
+            else break;
 
         }while(yukseklik>=1);
 
